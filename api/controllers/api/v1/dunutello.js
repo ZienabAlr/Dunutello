@@ -34,6 +34,17 @@ const update =(req, res) => {
     });
 }
 
+const create=  (req, res) => {
+    res.json({
+    
+        "company": "Dunutello",
+        "e-mail": "dunutello@gmail.com", 
+        "phone": "555-555-5555",
+        "dount": "chocolate"
+        
+    });
+}
+
 const remove =(req, res) => {
     res.json({
     
@@ -49,4 +60,5 @@ const remove =(req, res) => {
 module.exports.getAll = getAll;
 module.exports.getOne = getOne;
 module.exports.update = update;
+module.exports.create = create;
 module.exports.remove = remove;
