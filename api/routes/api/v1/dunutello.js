@@ -29,17 +29,7 @@ router.put('/:id', dunutelloController.update);
 
 // DELETE /api/v1/dunutello/:id
 
-router.delete('/:id', (req, res) => {
-    res.json({
-    
-        "status": "success",
-        "data": {
-
-        }
-
-        
-    });
-}); 
+router.delete('/:id', dunutelloController.remove); 
 
 module.exports = router;
 
