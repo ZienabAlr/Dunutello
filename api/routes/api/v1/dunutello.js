@@ -8,17 +8,7 @@ router.get('/', dunutelloController.getAll);
 
 // GET /api/v1/dunutello/:id
 
-router.get('/:id', (req, res) => {
-    res.json({
-    
-        "status": "success",
-        "data": {
-
-        }
-
-        
-    });
-});
+router.get('/:id', dunutelloController.getOne);
 
 // POST /api/v1/dunutello
 
