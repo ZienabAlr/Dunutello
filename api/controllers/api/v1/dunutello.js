@@ -34,6 +34,19 @@ const update =(req, res) => {
     });
 }
 
+const remove =(req, res) => {
+    res.json({
+    
+        "status": "success",
+        "data": {
+
+        }
+
+        
+    });
+}
+
 module.exports.getAll = getAll;
 module.exports.getOne = getOne;
 module.exports.update = update;
+module.exports.remove = remove;
