@@ -42,6 +42,21 @@ router.post('/', (req, res) => {
     });
 }); 
 
+// PUT /api/v1/dunutello/:id
+
+router.put('/:id', (req, res) => {
+    res.json({
+    
+        "status": "success",
+        "data": {
+
+        }
+
+        
+    });
+});
+
+
 
 
 
