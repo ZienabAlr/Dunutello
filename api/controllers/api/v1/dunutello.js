@@ -22,5 +22,18 @@ const getOne =(req, res) => {
     });
 }
 
+const update =(req, res) => {
+    res.json({
+    
+        "status": "success",
+        "data": {
+
+        }
+
+        
+    });
+}
+
 module.exports.getAll = getAll;
 module.exports.getOne = getOne;
+module.exports.update = update;
