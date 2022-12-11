@@ -56,6 +56,19 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// DELETE /api/v1/dunutello/:id
+
+router.delete('/:id', (req, res) => {
+    res.json({
+    
+        "status": "success",
+        "data": {
+
+        }
+
+        
+    });
+}); 
 
 
 
