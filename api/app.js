@@ -4,8 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+const apiDunutelloRouter = require('./routes/api/v1/dunutello');
 
 var app = express();
 
@@ -19,8 +20,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//middleware
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/api/v1/dunutello', apiDunutelloRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
