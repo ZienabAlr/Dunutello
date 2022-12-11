@@ -4,17 +4,7 @@ const dunutelloController = require('../../../controllers/api/v1/dunutello');
 
 // GET /api/v1/dunutello  
 
-router.get('/', (req, res) => {
-    res.json({
-    
-        "status": "success",
-        "data": {
-
-        }
-
-        
-    });
-});
+router.get('/', dunutelloController.getAll);
 
 // GET /api/v1/dunutello/:id
 
