@@ -34,7 +34,8 @@ const update =(req, res) => {
     });
 }
 
-const create=  (req, res) => {
+const create=  (req, res, next) => {
+    
     res.json({
     
         "company": "Dunutello",
