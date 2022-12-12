@@ -13,5 +13,7 @@ const dunutelloSchema = new Schema({
     note: {type: String, required: true}
 });
 
+const dunutello = mongoose.model('dunutello', dunutelloSchema);
+module.exports = dunutello;
 
 
