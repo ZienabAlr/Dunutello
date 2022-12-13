@@ -57,6 +57,14 @@ const create=  (req, res, next) => {
             });
         } 
 
+        if (!err){
+
+            res.json({
+                "status": "success",
+                "data": {"content" : doc
+                }
+            });
+        }
     }); 
 
     
