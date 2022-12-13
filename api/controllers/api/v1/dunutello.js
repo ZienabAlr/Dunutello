@@ -47,6 +47,18 @@ const create=  (req, res, next) => {
     dunutello.logoshape = req.body.logoshape;
     dunutello.amount = req.body.amount;
     dunutello.note = req.body.note;
+
+    dunutello.save((err, doc) => {
+
+        if(err) {
+            res.json({
+                "status": "error",
+                "message": "Error creating new dunutello"
+            });
+        } 
+
+    }); 
+
     
     // let dunutelloSchema = new Dunutello().dunutelloSchema; 
 
