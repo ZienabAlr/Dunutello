@@ -1,3 +1,4 @@
+const Dunutello = require('../../models/dunutello');
 const getAll =(req, res) => {
     res.json({
     
