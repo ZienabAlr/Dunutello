@@ -1,14 +1,18 @@
 const Dunutello = require('../../models/dunutello');
 const getAll =(req, res) => {
-    res.json({
-    
-        "status": "success",
-        "data": {
 
-        }
+    Dunutello.find({}, (err, doc) => { 
+    if (!err){
+        res.json({
+            "status": "success",
+            "data": {"content" : doc
+            }
+        });
 
-        
-    });
+
+    }
+});
+
 }
 
 const getOne =(req, res) => {
