@@ -37,7 +37,8 @@ const update =(req, res) => {
 
 const create=  (req, res, next) => {
     let dunutello = new Dunutello();
-    let dunutelloSchema = new Dunutello().dunutelloSchema;  
+    // let dunutelloSchema = new Dunutello().dunutelloSchema; 
+
     // res.json({
     
     //     "company": "Dunutello",
