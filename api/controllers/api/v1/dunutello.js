@@ -36,15 +36,16 @@ const update =(req, res) => {
 }
 
 const create=  (req, res, next) => {
+    let dunutello = new Dunutello();
+   
+    // res.json({
     
-    res.json({
-    
-        "company": "Dunutello",
-        "e-mail": "dunutello@gmail.com", 
-        "phone": "555-555-5555",
-        "dount": "chocolate"
+    //     "company": "Dunutello",
+    //     "e-mail": "dunutello@gmail.com", 
+    //     "phone": "555-555-5555",
+    //     "dount": "chocolate"
         
-    });
+    // });
 }
 
 const remove =(req, res) => {
