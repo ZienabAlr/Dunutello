@@ -70,18 +70,6 @@ const create=  (req, res, next) => {
             });
         }
     }); 
-
-    
-    // let dunutelloSchema = new Dunutello().dunutelloSchema; 
-
-    // res.json({
-    
-    //     "company": "Dunutello",
-    //     "e-mail": "dunutello@gmail.com", 
-    //     "phone": "555-555-5555",
-    //     "dount": "chocolate"
-        
-    // });
 }
 
 const remove =(req, res) => {
