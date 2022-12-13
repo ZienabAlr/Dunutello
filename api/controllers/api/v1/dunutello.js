@@ -1,4 +1,4 @@
-const Dunutello = require('../../models/dunutello');
+const Dunutello = require('../../../models/dunutello');
 const getAll =(req, res) => {
 
     Dunutello.find({}, (err, doc) => { 
@@ -70,6 +70,7 @@ const create=  (req, res, next) => {
             });
         }
     }); 
+
 }
 
 const remove =(req, res) => {

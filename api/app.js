@@ -8,6 +8,10 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const apiDunutelloRouter = require('./routes/api/v1/dunutello');
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/dunutello');
+
+
 var app = express();
 
 // view engine setup
