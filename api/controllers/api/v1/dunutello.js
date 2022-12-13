@@ -37,6 +37,17 @@ const update =(req, res) => {
 
 const create=  (req, res, next) => {
     let dunutello = new Dunutello();
+    dunutello.company = req.body.company;
+    dunutello.email = req.body.email;
+    dunutello.phone = req.body.phone;
+    dunutello.dountname = req.body.dountname;
+    dunutello.glaze = req.body.glaze;
+    dunutello.toppings = req.body.toppings;
+    dunutello.logoimg = req.body.logoimg;
+    dunutello.logoshape = req.body.logoshape;
+    dunutello.amount = req.body.amount;
+    dunutello.note = req.body.note;
+    
     // let dunutelloSchema = new Dunutello().dunutelloSchema; 
 
     // res.json({
